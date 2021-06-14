@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94A9E8"
+    android:padding="10dp"
+    tools:context=".CustomerActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="#0A0B0B"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:text="Name: "
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/custNameTextVIew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="141dp"
+                android:layout_marginTop="50dp"
+                android:text="Virat Kohli"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:text="Email Id: " />
+
+            <TextView
+                android:id="@+id/custEmailIdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/custNameTextVIew"
+                android:layout_marginStart="141dp"
+                android:layout_marginTop="51dp"
+
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:text="Account Id: " />
+
+            <TextView
+                android:id="@+id/custAccIdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custEmailIdTextView"
+                android:layout_marginStart="141dp"
+                android:layout_marginTop="50dp"
+
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:text="Balance: " />
+
+            <TextView
+                android:id="@+id/custBalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custAccIdTextView"
+                android:layout_marginStart="141dp"
+                android:layout_marginTop="50dp"
+
+                android:text="TextView" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="89dp"
+        android:background="@drawable/roundwhite"
+        android:text="Send Money"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/roundwhite"
+        android:gravity="center"
+        android:text="HOME"
+        android:textColor="@android:color/black" />
+
+
+</RelativeLayout>
